@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .header {
-  height: 105vh;
+  height: 115vh;
   width: 100%;
   position: relative;
 }
@@ -162,7 +162,7 @@ p {
   margin-left: 100px;
 }
 .logocontent {
-  margin-top: -340px;
+  margin-top: -320px;
   width: 400px;
   margin-left: 69%;
 }
