@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .header {
-  height: 107vh;
+  height: 116vh;
   width: 100%;
   position: relative;
 }
@@ -15,10 +15,8 @@ nav {
   padding: 5px 70px;
   justify-content: space-between;
 }
-.logo {
-  width: 200px;
-}
-/********************************************************** initial disp ***********************************************************************/
+
+/********************************************************** initial display ***********************************************************************/
 p {
   font-size: 15px;
   line-height: 18px;
@@ -51,6 +49,8 @@ p {
 }
 .nav-list {
   padding: 28px 0;
+  margin-right: -40px;
+  margin-top: -20px;
 }
 .nav-list li {
   display: inline-block;
@@ -62,7 +62,20 @@ p {
   padding: 5px 0;
   position: relative;
 }
-/*!-------**********************************************------------------nav transitions------********************************************************----*/
+.logo {
+  width: 140px;
+  margin-left: -50px;
+}
+.main-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 4rem;
+  transform: translate(-50%, -80%);
+  cursor: default;
+  color: #fff;
+}
+/*!-------**********************************************scroll transition********************************************************----*/
 .nav-list li a::after {
   content: "";
   background: #ff3d00;
@@ -76,15 +89,7 @@ p {
 .nav-list li a:hover::after {
   width: 100%;
 }
-.main-title {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  font-size: 3rem;
-  transform: translate(-50%, -30%);
-  cursor: pointer;
-  color: #fff;
-}
+
 .content {
   position: absolute;
   left: 50%;
@@ -119,10 +124,9 @@ p {
   margin-top: 40px;
 }
 .category {
-  width: 80px;
+  width: 90px;
   height: 80px;
   margin: 0 10px;
-  font-size: 12px;
   justify-content: center;
   flex-direction: column;
 }
@@ -150,7 +154,7 @@ p {
   font-size: 1.1rem;
   color: #fff;
 }
-/* ********************************************************************intro*************************************************** */
+/* **********************************content display*************************************************** */
 #header {
   height: 100vh;
   background-image: url(images/background.png);
@@ -162,8 +166,8 @@ p {
   margin-left: 100px;
 }
 .logocontent {
-  margin-top: -310px;
-  width: 400px;
+  margin-top: -320px;
+  width: 250px;
   margin-left: 69%;
 }
 .header-text {
@@ -174,9 +178,16 @@ h1 {
   font-size: 50px;
   color: rgb(170, 12, 12);
 }
+h5 {
+  font-size: 110px;
+  margin-top: -280px;
+  color: #fff;
+  margin-left: 140px;
+  font-family: allura regular;
+}
 h6 {
   font-size: 50px;
-  margin-top: -440px;
+  margin-top: -60px;
   color: rgb(170, 12, 12);
 }
 .square {
@@ -196,7 +207,7 @@ h6 {
   color: #ff3d00;
 }
 
-/***************************************************************************** about **************************************************************/
+/************************ about **************************************************************/
 #about,
 #offer {
   padding: px 0;
@@ -232,7 +243,7 @@ h6 {
   font-style: italic;
   color: #797979;
 }
-/* ***********************************************************************features ************************************************************/
+/* *********************************************************features ************************************************************/
 #features {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -268,7 +279,8 @@ h6 {
   display: inline-block;
   margin-right: 25px;
 }
-/********************************************************************** courses *****************************************************************/
+/*------------------------------- projects, updates, blog and contents -----------------------*/
+/* ----------content and main section uses "courses" class word so find them according to it---------- */
 #courses {
   padding: 1px 0;
 }
@@ -292,11 +304,6 @@ h6 {
 .course-text button {
   margin: 30px 0;
 }
-/**************************************************** offer *******************************************************************************/
-#offer button {
-  margin: 30px 0;
-}
-
 /* *****************************************************footer *************************************************************************/
 #footer {
   padding: 50px 10px 30px;
@@ -317,7 +324,7 @@ hr {
   margin-top: 60px;
 }
 .footerrightcol {
-  flex-basis: 15%;
+  flex-basis: 10%;
 }
 .footerlinks {
   display: flex;
@@ -348,11 +355,17 @@ hr {
 .footerlogo {
   flex-basis: 100%;
 }
-
-/* ******************************************************************responsive************************************************************************************* */
 @media (min-aspect-ratio: 16/9) {
   .back-vid {
     width: 100%;
     height: auto;
+  }
+}
+/* ******************************************************************responsiveness************************************************************************************* */
+@media only screen and (max-width: 770px) {
+  .header {
+    height: 116vh;
+    width: 100%;
+    position: relative;
   }
 }

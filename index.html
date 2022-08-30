@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
     />
    <script src="https://kit.fontawesome.com/687cbf97be.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
      <a href="#"><i class="fa-solid fa-arrow-up-to-line"></i></a>
@@ -24,7 +25,7 @@
       <nav>
         <img src="media/logo.png" class="logo" />
         <ul class="nav-list">
-          <li><a href="#about">About MARS</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#project">Projects</a></li>
            <li><a href="#blog">Blogs</a></li>
           <li><a href="#update">Updates</a></li>
@@ -47,10 +48,7 @@
             <img src="media/github.png" />
            
           </div>
-          <div class="category">
-            <img src="media/mail.png" />
-           
-          </div>
+        
           <div class="category">
             <img src="media/hashnode.png" />
            
@@ -60,17 +58,21 @@
     </div>
 
       
-         <div class="content1">
-        <div class="content1-images"></div>
+        
 
-        <!-- --------------------------------------------------------------------------------------intro ------------------------------------------------------->
+        <!-- --------------------------------------------------------------------------------------slide transition (into) ------------------------------------------------------->
+        <div class="content1">
+        <div class="content1-images"></div>
         <img src="media/logo.png" class="logocontent" />
+        <div class="tagline">
+          <h5>We Create Dreams</h5>
+          </div>
            <section id="header">
       <div class="container">
         <div class="header-text">
+          
           <h6>
-            This is just a preview.<br />
-            It brings purpose to think.
+            About Us
           </h6>
           <span class="square"></span>
           <p class="text">
@@ -107,7 +109,7 @@
       <div class="divleftcol"><img src="media/pic1.jpg" /></div>
       <div class="divrightcol">
         <div class="abouttext">
-          <h1>About MARS</h1>
+          <h1>About Us</h1>
           <span class="square"></span>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, animi
@@ -124,7 +126,7 @@
 
             <span class="line-2"></span> <br /><br />
 
-            <span class="line-3"></span> 
+            <span class="line-3"></span> <br /><br />
           </div>
           <h2>
             " Learning is not attained by chance,it must be sought for with
@@ -134,7 +136,7 @@
         </div>
       </div>
     </section>
-   
+   <br /><br />
     <!----------------------------------------------------------------------------- projects ------------------------------------------------------------------->
     <section id="project">
       <div class="container course-row">
@@ -166,12 +168,13 @@
         <div class="courserightcol"><img src="media/pic3.jpg" /></div>
       </div>
     </section>
+    <br /><br />
         <!-------------------------------------------------------------------------------- updates --------------------------------------------------------------------->
     <section id="about">
       <div class="divleftcol"><img src="media/pic2.jpg" /></div>
       <div class="divrightcol">
         <div class="abouttext">
-          <h1>About MARS</h1>
+          <h1>About Us</h1>
           <span class="square"></span>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, animi
@@ -198,7 +201,7 @@
         </div>
       </div>
     </section>
-   
+   <br /><br />
      <!----------------------------------------------------------------------------- Blog------------------------------------------------------------------->
     <section id="blog">
       <div class="container course-row">
@@ -230,12 +233,13 @@
         <div class="courserightcol"><img src="media/pic3.jpg" /></div>
       </div>
     </section>
+    <br /><br />
         <!-------------------------------------------------------------------------------- upcoming events --------------------------------------------------------------------->
     <section id="about">
       <div class="divleftcol"><img src="media/pic4.jpg" /></div>
       <div class="divrightcol">
         <div class="abouttext">
-          <h1>About MARS</h1>
+          <h1>About Us</h1>
           <span class="square"></span>
           <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, animi
@@ -262,8 +266,7 @@
         </div>
       </div>
     </section>
-   
-    
+   <br /><br />
 <!------------------------------------------------------ footer ---------------------------------------------------------------------------------->
      <section id="footer">
       <div class="container footer-row">
@@ -321,14 +324,17 @@
     <script>
       var typed = new Typed(".auto-input", {
         strings: [
-          "Imagine.",
-          "Design.",
-          "Innovate.",
+          "Imagine",
+          "Design",
+          "Innovate",
         ],
-        typeSpeed: 75,
-        backSpeed: 25,
+        typeSpeed: 100,
+        backSpeed: 40,
         loop: true,
       });
     </script>
+    <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
  </body>
 </html>
