@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .header {
-  height: 116vh;
+  height: 112vh;
   width: 100%;
   position: relative;
 }
@@ -105,8 +105,8 @@ p {
 .content1 {
   width: 100%;
   background: #000;
-  min-height: 1vh;
-  z-index: 2;
+  min-height: 0vh;
+  z-index: 1;
   position: absolute;
 }
 .content1-images {
@@ -139,8 +139,6 @@ p {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: auto;
-  height: auto;
   z-index: -1;
 }
 #image {
@@ -180,10 +178,13 @@ h1 {
 }
 h5 {
   font-size: 110px;
-  margin-top: -280px;
+  margin-top: -17%;
   color: #fff;
-  margin-left: 140px;
-  font-family: allura regular;
+  margin-left: 20%;
+  font-family: "Water Brush", cursive;
+  display: flex;
+  border-radius: 15px;
+  text-shadow: 0 5px 0 #0e86d4, 0 6px 0 #055c9d;
 }
 h6 {
   font-size: 50px;
@@ -361,10 +362,16 @@ hr {
     height: auto;
   }
 }
+@media (max-aspect-ratio: 16/9) {
+  .back-vid {
+    width: auto;
+    height: 100%;
+  }
+}
 /* ******************************************************************responsiveness************************************************************************************* */
 @media only screen and (max-width: 770px) {
   .header {
-    height: 116vh;
+    height: 100%;
     width: 100%;
     position: relative;
   }
